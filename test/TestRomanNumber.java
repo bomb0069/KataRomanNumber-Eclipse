@@ -4,10 +4,14 @@ import org.junit.Test;
 
 
 public class TestRomanNumber {
+	TransformToRomanNumber transform = new TransformToRomanNumber();
 
 	@Test
 	public void in_1_out_I () {
-		TransformToRomanNumber transform = new TransformToRomanNumber();
 		assertEquals("I",transform.arabicToRoman(1));
+	}
+	@Test
+	public void in_2_out_II () {
+		assertEquals("II",transform.arabicToRoman(2));
 	}
 }
