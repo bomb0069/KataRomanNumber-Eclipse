@@ -14,4 +14,8 @@ public class TestRomanNumber {
 	public void in_2_out_II () {
 		assertEquals("II",transform.arabicToRoman(2));
 	}
+	@Test
+	public void in_3_out_III () {
+		assertEquals("III",transform.arabicToRoman(3));
+	}
 }
