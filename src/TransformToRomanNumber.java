@@ -6,6 +6,8 @@ public class TransformToRomanNumber {
 			return "I";
 		if (arabic == 2)
 			return "II";
+		if (arabic ==4)
+			return "IV";
 		return "III";
 	}
 
