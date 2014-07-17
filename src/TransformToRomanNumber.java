@@ -4,12 +4,15 @@ public class TransformToRomanNumber {
 
 		String romanNumber = "";
 
-		if (arabic ==4)
-			return "IV";
-		if(arabic == 5)
-			return "V";
-		for (int round=0; round < arabic; round ++)
-			romanNumber += "I";
+		if (arabic == 4)
+			romanNumber = "IV";
+		else if (arabic == 5)
+			romanNumber = "V";
+		else {
+			for (int round = 0; round < arabic; round++) {
+				romanNumber += "I";
+			}
+		}
 		return romanNumber;
 	}
 
