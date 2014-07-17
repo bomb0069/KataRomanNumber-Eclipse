@@ -2,13 +2,15 @@ public class TransformToRomanNumber {
 
 	public String arabicToRoman(int arabic) {
 
-		if (arabic == 1)
-			return "I";
-		if (arabic == 2)
-			return "II";
+		String romanNumber = "";
+
 		if (arabic ==4)
 			return "IV";
-		return "III";
+		if(arabic == 5)
+			return "V";
+		for (int round=0; round < arabic; round ++)
+			romanNumber += "I";
+		return romanNumber;
 	}
 
 }
